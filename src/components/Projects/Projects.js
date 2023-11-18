@@ -25,7 +25,7 @@ function Projects() {
             <ProjectCard
               imgPath={login}
               isBlog={false}
-             title="Routes "
+             title="Routes"
               description="This is a React web application that includes features like user authentication, a dashboard, and various pages such as Home, About, Contact, Login, and Signup. It also uses React Router for navigation and includes a PrivateRoute component for protecting routes that require authentication."
               ghLink="https://github.com/HarshalMjn/router-project"
               demoLink=":https://router-project-studynotion.netlify.app/"
