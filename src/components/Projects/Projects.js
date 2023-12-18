@@ -8,6 +8,7 @@ import Course from "../../Assets/Projects/Course.png";
 import login from "../../Assets/Projects/login.png";
 import Tour from "../../Assets/Projects/Tour.png";
 import blogs from "../../Assets/Projects/blogs.png";
+import Ecomm from "../../Assets/Projects/Ecomm.png"
 
 function Projects() {
   return (
@@ -21,11 +22,21 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ecomm}
+              isBlog={false}
+              title="Shopping Cart"
+              description="A React shopping cart app powered by Redux Toolkit. This app ensures a seamless shopping experience with effortless cart management, real-time updates on totals, and intuitive control. The underlying AppContextProvider, backed by Redux Toolkit, guarantees precision in calculating totals and simplifies item removal. Elevate your shopping journey with the efficiency and power of React Redux Toolkit."
+              ghLink="https://github.com/HarshalMjn"
+              demoLink="https://shopping-cart-cf8e6.web.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={login}
               isBlog={false}
-              title="Routes"
+              title="RoutesApp"
               description="This is a React web application that includes features like user authentication, a dashboard, and various pages such as Home, About, Contact, Login, and Signup. It also uses React Router for navigation and includes a PrivateRoute component for protecting routes that require authentication."
               ghLink="https://github.com/HarshalMjn/router-project"
               demoLink=":https://router-project-studynotion.netlify.app/"
