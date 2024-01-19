@@ -9,6 +9,8 @@ import login from "../../Assets/Projects/login.png";
 import Tour from "../../Assets/Projects/Tour.png";
 import blogs from "../../Assets/Projects/blogs.png";
 import Ecomm from "../../Assets/Projects/Ecomm.png"
+import react from "../../Assets/Projects/react.png";
+import Backend from "../../Assets/Projects/Backend.png";
 
 function Projects() {
   return (
@@ -24,6 +26,38 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Backend}
+              isBlog={false}
+              title="Back End"
+              description="Explore my Node.js and Express backend project, showcasing efficient server-side JavaScript execution. This robust backend, powered by Node.js and Express, prioritizes scalability.
+
+              Technologies include MongoDB for flexible data storage, Postman for API testing, and Cloudinary for media management. Key features encompass a scalable API and robust data security, demonstrating my proficiency in building dynamic and secure backend solutions."
+              ghLink="https://github.com/HarshalMjn/BackEnd"
+              //demoLink="https://shopping-cart-cf8e6.web.app/"
+            />
+          </Col>
+         <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={react}
+              isBlog={false}
+              title="React-Project"
+              description="Step into the world of React with projects that reflect my commitment to building cutting-edge web applications. These projects showcase a fusion of HTML, CSS, and React, emphasizing dynamic and responsive user interfaces. Each project is a testament to my passion for coding and my proficiency in harnessing React's power for exceptional web development."
+              ghLink="https://github.com/HarshalMjn"
+              //demoLink="https://shopping-cart-cf8e6.web.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Js}
+              isBlog={false}
+              title="JavaScript-Projects"
+              description=" JavaScript projects that reflect my expertise in web development. These projects encompass a wide range of functionalities, showcasing my ability to create interactive and user-friendly web applications. They are built using a combination of HTML, CSS, and JavaScript, and emphasize dynamic and responsive user interfaces. Each project is a testament to my dedication to continuous learning and my passion for coding in the ever-evolving landscape of web development."
+              ghLink="https://github.com/HarshalMjn/JavaScript--Projects"
+              // demoLink=""      <--------Please include a demo link here 
+            />
+          </Col>
+           <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Ecomm}
               isBlog={false}
               title="Shopping Cart"
@@ -36,11 +70,7 @@ function Projects() {
             <ProjectCard
               imgPath={login}
               isBlog={false}
-<<<<<<< HEAD
-              title="RoutesApp"
-=======
-             title="Routes"
->>>>>>> 4a3e5e70603c77b5eda18edd544235e4e6e18063
+             title="RoutesApp"
               description="This is a React web application that includes features like user authentication, a dashboard, and various pages such as Home, About, Contact, Login, and Signup. It also uses React Router for navigation and includes a PrivateRoute component for protecting routes that require authentication."
               ghLink="https://github.com/HarshalMjn/router-project"
               demoLink=":https://router-project-studynotion.netlify.app/"
@@ -91,16 +121,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Js}
-              isBlog={false}
-              title="JavaScript-Projects"
-              description=" JavaScript projects that reflect my expertise in web development. These projects encompass a wide range of functionalities, showcasing my ability to create interactive and user-friendly web applications. They are built using a combination of HTML, CSS, and JavaScript, and emphasize dynamic and responsive user interfaces. Each project is a testament to my dedication to continuous learning and my passion for coding in the ever-evolving landscape of web development."
-              ghLink="https://github.com/HarshalMjn/JavaScript--Projects"
-              // demoLink=""      <--------Please include a demo link here 
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
